@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin - Tables</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <style>
+  #success_message{ display: none;}
+  </style>
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+    <a class="navbar-brand mr-1" href="http://localhost/newtest/adminPanel/index.php">MIS Admin</a>
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+
+
+
+    <!-- Navbar -->
+
+  
+
+  </nav>
+
+  
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+          <div class="container">
+
+                <form class="well form-horizontal" action="http://localhost/newtest/adminPanel/conval.php" method="post"  id="contact_form">
+            <fieldset>
+            
+            <!-- Form Name -->
+            <legend style="font-family: Verdana;">Report A Bug</legend>
+            
+            <!-- Text input-->
+            
+            <div class="form-group">
+              <label class="col-md-4 control-label">Name</label>  
+              <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input  name="fname" placeholder="First Name" class="form-control"  type="text">
+                </div>
+              </div>
+            </div>
+
+            <!-- Text input-->
+                   <div class="form-group">
+              <label class="col-md-4 control-label">Register No</label>  
+                <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+              <input name="reg" placeholder="Register Number" class="form-control"  type="text">
+                </div>
+              </div>
+            </div>
+            <!-- Select Basic -->
+               
+            <div class="form-group"> 
+              <label class="col-md-4 control-label">Specification</label>
+                <div class="col-md-4 selectContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                <select name="issue" class="form-control selectpicker" >
+                  <option value=" " >Please select the module</option>
+                  <option value="pernsonal_information">Personal Information</option>
+                  <option value="internals">Internals</option>
+                  <option value="attendence">Attendence</option>
+                  <option value="externals">Externals</option>
+                </select>
+              </div>
+            </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">Subject/About</label>  
+               <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-flag"></i></span>
+              <input name="sub" placeholder="Heading Of Your Issue" class="form-control" type="text">
+                </div>
+              </div>
+            </div>
+            <!-- Date input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">Date</label>  
+               <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+              <input name="date" placeholder="Heading Of Your Issue" class="form-control" type="date">
+                </div>
+              </div>
+            </div>
+            
+            <!-- Text area -->
+              
+            <div class="form-group">
+              <label class="col-md-4 control-label">Description</label>
+                <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                        <textarea class="form-control" name="des" placeholder="Description"></textarea>
+              </div>
+              </div>
+            </div>
+            
+            <!-- Success message -->
+            <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label"></label>
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+              </div>
+            </div>
+            
+            </fieldset>
+            </form>
+            </div>
+                </div><!-- /.container -->
+      <!-- Sticky Footer --
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span><p>Copyright &copy; 2019 Sri Jayachamarajendra (Govt.) Polytechnic. All rights reserved.<br><br>
+              Developed  By:S.J.P UNITED</p></span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/datatables-demo.js"></script>
+
+</body>
+
+</html>
